@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.sap.db.jdbc.Driver
+    url: jdbc:sap://localhost:30015/
+    username: I312473
+    password: Test1234
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          
+  freemarker:
+    cache: false
+    content-type: text/html; charset=utf-8
+    template-loader-path: classpath:/templates/
+    suffix: .html
+    expose-spring-macro-helpers: true
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
